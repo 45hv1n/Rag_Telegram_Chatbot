@@ -4,20 +4,20 @@ This project is a Retrieval-Augmented Generation (RAG) chatbot that leverages a 
 
 #### Features
 
-Semantic Search: Uses embeddings stored in Pinecone to perform semantic search for retrieving relevant book content based on user queries.
-RAG Pipeline: Combines retrieved context with the Mistral model to generate high-quality responses.
-Telegram Integration: Users can interact with the chatbot through a Telegram bot.
-Scalable Vector DB: Pinecone is used for efficient storage and retrieval of text embeddings.
-Modular Design: Easy-to-understand scripts for data processing and bot operation.
+- Semantic Search: Uses embeddings stored in Pinecone to perform semantic search for retrieving relevant book content based on user queries.
+- RAG Pipeline: Combines retrieved context with the Mistral model to generate high-quality responses.
+- Telegram Integration: Users can interact with the chatbot through a Telegram bot.
+- Scalable Vector DB: Pinecone is used for efficient storage and retrieval of text embeddings.
+- Modular Design: Easy-to-understand scripts for data processing and bot operation.
 
 #### Tech Stack
 
-Python: Core programming language.
-Pinecone: Vector database for storing and querying embeddings.
-LangChain: Framework for building the RAG pipeline and managing embeddings.
-Mistral Model: Language model for generating responses.
-HuggingFace: Provides access to embeddings and model APIs.
-Telegram Bot: Interface for user interaction via Telegram.
+- Python: Core programming language.
+- Pinecone: Vector database for storing and querying embeddings.
+- LangChain: Framework for building the RAG pipeline and managing embeddings.
+- Mistral Model: Language model for generating responses.
+- HuggingFace: Provides access to embeddings and model APIs.
+- Telegram Bot: Interface for user interaction via Telegram.
 
 #### Prerequisites
 
@@ -42,18 +42,18 @@ pip install -r requirements.txt
 ##### Set Up Environment Variables:
 
 Create a .env file in the project root and add the following keys:
-PINECONE_API_KEY=your_pinecone_api_key
-HUGGINGFACE_TOKEN=your_huggingface_token
-TELEGRAM_TOKEN=your_telegram_bot_token
+- PINECONE_API_KEY=your_pinecone_api_key
+- HUGGINGFACE_TOKEN=your_huggingface_token
+- TELEGRAM_TOKEN=your_telegram_bot_token
 
 Replace your_pinecone_api_key, your_huggingface_token, and your_telegram_bot_token with your actual credentials.
 
-Process Data and Create Vector DB:Run the data_processing.py script to generate embeddings from the book data and store them in Pinecone:
+- Process Data and Create Vector DB: Run the data_processing.py script to generate embeddings from the book data and store them in Pinecone:
 python data_processing.py
 
 This script processes the books, creates embeddings, and uploads them to the Pinecone vector database.
 
-Run the Chatbot:Start the Telegram bot and the RAG pipeline by running:
+- Run the Chatbot: Start the Telegram bot and the RAG pipeline by running:
 python app.py
 
 This script initializes the QA chain (using LangChain and Mistral) and starts polling the Telegram bot for user queries.
@@ -75,5 +75,3 @@ Data/: Directory containing the book data (not included in the repo; add your ow
 
 License
 This project is licensed under the MIT License. See the LICENSE file for details.
-Contact
-For questions or support, please open an issue on GitHub or contact your-email@example.com.
