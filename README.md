@@ -32,8 +32,8 @@ Follow these steps to set up and run the project:
 
 ##### Clone the Repository:
 
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
+git clone https://github.com/45hv1n/Rag_Telegram_Chatbot
+cd Rag_Telegram_Chatbot
 
 ##### Install the required Python packages by running:
 
@@ -58,6 +58,14 @@ python app.py
 
 This script initializes the QA chain (using LangChain and Mistral) and starts polling the Telegram bot for user queries.
 
+##### Project Structure
+
+- data_processing.py: Script to process book data, generate embeddings, and store them in Pinecone.
+- app.py: Main script to run the RAG pipeline and Telegram bot.
+requirements.txt: List of Python dependencies.
+- .env: Environment file for storing API keys and tokens (not tracked in git).
+Data/: Directory containing the book data (not included in the repo; add your own books).
+
 ##### Usage
 
 Open Telegram and start a chat with your bot (use the bot name provided by BotFather).
@@ -65,13 +73,6 @@ Send a query related to the book content.
 The bot performs a semantic search in Pinecone, retrieves relevant context, and generates a response using the Mistral model.
 The response is sent back to you in the Telegram chat.
 
-##### Project Structure
+##### License
 
-data_processing.py: Script to process book data, generate embeddings, and store them in Pinecone.
-app.py: Main script to run the RAG pipeline and Telegram bot.
-requirements.txt: List of Python dependencies.
-.env: Environment file for storing API keys and tokens (not tracked in git).
-Data/: Directory containing the book data (not included in the repo; add your own books).
-
-License
 This project is licensed under the MIT License. See the LICENSE file for details.
