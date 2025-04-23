@@ -1,0 +1,8 @@
+README.md
+setup.py
+src/Chatbot/__init__.py
+src/Chatbot.egg-info/PKG-INFO
+src/Chatbot.egg-info/SOURCES.txt
+src/Chatbot.egg-info/dependency_links.txt
+src/Chatbot.egg-info/top_level.txt
+src/Chatbot/constants/__init__.py

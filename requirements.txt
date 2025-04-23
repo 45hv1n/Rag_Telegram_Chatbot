@@ -1,0 +1,10 @@
+sentence-transformers 
+transformers
+langchain 
+pypdf 
+langchain_community 
+langchain_pinecone
+langchain_huggingface
+dotenv
+python-telegram-bot
+-e .
